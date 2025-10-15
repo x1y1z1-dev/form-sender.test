@@ -40,6 +40,9 @@ MAIL_PASSWORD=твій_app_password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=твій_емейл@gmail.com
 MAIL_FROM_NAME="Contact Form"
+MAIL_TO_ADDRESS="6weeks.13h@gmail.com"
+MAIL_TO_SUBJECT="6weeks - Форма заповнена"
+
 ```
 
 > Для Gmail потрібно створити **App Password** (Security → App Passwords). Не використовуйте звичайний пароль.

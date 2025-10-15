@@ -15,11 +15,14 @@ class FormController extends Controller
             'message' => 'nullable|string',
         ]);
 
+        $to = env('MAIL_TO_ADDRESS');
+        $subject = env('MAIL_TO_SUBJECT');
+
         Mail::raw(
             "Ім’я: {$data['name']}\nEmail: {$data['email']}\nПовідомлення: {$data['message']}",
-            function ($message) {
-                $message->to('6weeks.13h@gmail.com')
-                        ->subject('6weeks - Форма заповнена');
+            function ($message) use ($to, $subject) {
+            $message->to($to)
+                    ->subject($subject);
             }
         );
 
