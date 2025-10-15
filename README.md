@@ -44,6 +44,10 @@ MAIL_FROM_NAME="Contact Form"
 
 > Для Gmail потрібно створити **App Password** (Security → App Passwords). Не використовуйте звичайний пароль.
 
+Переконайся, що у твоєму акаунті Gmail увімкнено 2FA (двофакторну аутентифікацію).
+Створи App Password: https://myaccount.google.com/apppasswords
+Перейди в Google Security → App Passwords
+
 ### 2.3 Створити файл SQLite
 ```powershell
 cd database
